@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Adicionar Hotel</title>
+ <link rel="stylesheet" href="adicionar.css">
+</head>
+<body>
+ <h1>Adicionar Hotel</h1>
+ <form id="formulario_hotel">
+ <label for="nome_hotel">Nome do Hotel:</label>
+ <input type="text" id="nome_hotel" name="nome_hotel" placeholder="Insira o nome do hotel">
+ <br>
+ <label for="localizacao">Localização:</label>
+ <input type="text" id="localizacao" name="localizacao" placeholder="Insira a localização do hotel">
+ <br>
+ <label for="descricao">Descrição:</label>
+ <textarea id="descricao" name="descricao" placeholder="Insira uma descrição do hotel"></textarea>
+ <br>
+
+ <label for="imagem_hotel">Imagem do Hotel:</label>
+ <input type="file" id="imagem_hotel" name="imagem_hotel" accept="image/*">
+ <br>
+ <label for="amenidades">Amenidades:</label>
+ <input type="checkbox" id="wifi" name="wifi" value="wifi"> Wi-Fi
+ <input type="checkbox" id="piscina" name="piscina" value="piscina"> Piscina
+ <input type="checkbox" id="restaurante" name="restaurante" value="restaurante"> Restaurante
+ <br>
+ <button type="submit">Adicionar Hotel</button>
+ </form>
+</body>
+</html>
