@@ -43,7 +43,6 @@ CREATE TABLE `hoteis` (
 
 CREATE TABLE `usuario` (
   `id` int NOT NULL,
-  `nome` text NOT NULL,
   `email` text NOT NULL,
   `senha` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
