@@ -1,8 +1,8 @@
 <?php
 $hostname = "localhoste";
 $bancodedados = "turistche.sql";
-$usuario = "";
-$senha = "";
+$usuario = "root";
+$senha = "aluno";
 
 
 
