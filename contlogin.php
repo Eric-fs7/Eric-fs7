@@ -4,7 +4,7 @@ include 'conectar.php';
 session_start(); // Inicie a sessão
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $login = $_POST['emaileuser']; // Campo que pode ser email ou username
+    $login = $_POST['email']; // Usando o nome correto
     $senha = $_POST['senha']; // Campo para senha
 
     // Validação básica
@@ -14,16 +14,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
+    // Prepare a parameterized query
+    $stmt = $conn->prepare("SELECT * FROM usuario WHERE email=? AND senha=?");
+    $stmt->bind_param("ss", $login, $senha);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
-    $login = mysqli_real_escape_string($conn, $login);
-    $senha = mysqli_real_escape_string($conn, $senha);
-
-    $query = "SELECT * FROM usuarios WHERE (email='$login' OR nome='$login') AND senha='$senha'";
-    $result = mysqli_query($conn, $query);
-
-    if (mysqli_num_rows($result) == 1) {
-        $_SESSION['nome_usuario'] = $row['nome'];
-        header("Location: index.php");
+    if ($result->num_rows == 1) {
+        $row = $result->fetch_assoc();
+        $_SESSION['nome_usuario'] = $row['email'];
+        header("Location: index.php"); // Redirecionar para a página principal
         exit();
     } else {
         $_SESSION['error'] = "Email ou senha incorretos.";
@@ -33,5 +33,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 // Fechar conexão
-mysqli_close($conn);
+$conn->close();
 ?>

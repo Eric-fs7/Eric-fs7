@@ -5,9 +5,8 @@ include 'conectar.php'; // Inclua o arquivo de conexão
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Captura os dados do formulário
     $email = $_POST['email'];
-    $nome = $_POST['nome'];
     $senha = $_POST['senha'];
-    $csenha = $_POST['csenha'];
+    $csenha = $_POST['csenha']; // Corrigido para o nome correto
 
     // Validação do email
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -24,11 +23,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // Insere o usuário no banco de dados
-    $query = "INSERT INTO usuarios (email, nome, senha) VALUES (?, ?, ?)";
+    $query = "INSERT INTO usuarios (email, senha) VALUES (?, ?)";
     $stmt = mysqli_prepare($conn, $query);
 
     if ($stmt) {
-        mysqli_stmt_bind_param($stmt, "sss", $email, $nome, $senha); // Armazenando senha em texto simples
+        mysqli_stmt_bind_param($stmt, "ss", $email, $senha); // Armazenando a senha em texto simples
 
         if (mysqli_stmt_execute($stmt)) {
             // Cadastro bem-sucedido, redireciona para a página de login
