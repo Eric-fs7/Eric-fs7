@@ -95,7 +95,10 @@ include 'conectar.php'; // Incluindo o arquivo de conexão
                         echo '  <div class="listing-item">';
                         echo '    <div class="listing-image">';
                         // Exib indo a imagem do ponto
-                        echo '      <img src="data:image/jpeg;base64,' . base64_encode($row['foto']) . '" alt="Image" class="img-fluid">';
+                        echo '      <img src="data:image/jpeg;base64,' . base64_encode($row['foto']) . '" alt="Image" class="img-fluid xd" style="
+    width: 350px;
+    height: 300px;
+">>';
                         echo '    </div>';
                         echo '    <div class="listing-content">';
                         echo '      <h2 class="mb-1">' . $row['localizacao'] . '</h2>';
