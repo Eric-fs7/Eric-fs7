@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // Insere o usuário no banco de dados
-    $query = "INSERT INTO usuarios (email, senha) VALUES (?, ?)";
+    $query = "INSERT INTO usuario (email, senha) VALUES (?, ?)";
     $stmt = mysqli_prepare($conn, $query);
 
     if ($stmt) {
