@@ -5,9 +5,9 @@
     <link rel="stylesheet" href="adicionar.css">
 </head>
 <body>
-    <h1>Adicionar Hotel</h1>
+    <h1>Adicionar Local</h1>
     <form id="formulario_hotel" action="adicionar_local.php" method="POST" enctype="multipart/form-data">
-        <label for="nome_hotel">Nome do Hotel:</label>
+        <label for="nome_hotel">Nome do Local:</label>
         <input type="text" id="nome_hotel" name="nome_hotel" placeholder="Insira o nome do hotel" required>
         <br>
         
@@ -24,7 +24,7 @@
         <br>
         
         <br>
-        <button type="submit">Adicionar Hotel</button>
+        <button type="submit">Adicionar local</button>
     </form>
 </body>
 </html>

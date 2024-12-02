@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Trips &mdash; Website Template by Colorlib</title>
+    <title>Turistche &mdash; Website Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -42,7 +42,7 @@ include 'conectar.php'; // Incluindo o arquivo de conexão
                 <div class="col-3 ">
                     <div class="site-logo">
                         <a href="index.html" class="font-weight-bold">
-                            <img src="images/logo.png" alt="Image" class="img-fluid">
+                            <img src="images/logo turistche.png" alt="Image" class="img-fluid">
                         </a>
                     </div>
                 </div>
@@ -63,8 +63,8 @@ include 'conectar.php'; // Incluindo o arquivo de conexão
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
                     <div class="col-md-5" data-aos="fade-up">
-                        <h1 class="mb-3 text-white">Trips List</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+                        <h1 class="mb-3 text-white">TurisTche</h1>
+                        <p>Um site Para ajudar você e sua familia acharem o lugar perfeito para passar o dia ou final de semana.</p>
                     </div>
                 </div>
             </div>
@@ -76,9 +76,9 @@ include 'conectar.php'; // Incluindo o arquivo de conexão
             <div class="row justify-content-center text-center">
                 <div class="col-md-7">
                     <div class="heading-39101 mb-5">
-                        <span class="backdrop text-center">Journey</span>
-                        <span class="subtitle-39191">Journey</span>
-                        <h3>Your Journey Starts Here</h3>
+                        <span class="backdrop text-center">EM ALTA</span>
+                        <span class="subtitle-39191">Em Alta</span>
+                        <h3>Lugares Mais Visitados</h3>
                     </div>
                 </div>
             </div>
