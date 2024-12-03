@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Turistche &mdash; Website Template by Colorlib</title>
+    <title>Turistche &mdash; </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -50,7 +50,7 @@ include 'conectar.php'; // Incluindo o arquivo de conexão
                     <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
                     <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                         <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                            <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="active"><a href="adicionar.php" class="nav-link">adicionar</a></li>
                         </ul>
                     </nav>
                 </div>

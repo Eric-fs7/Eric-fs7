@@ -21,7 +21,7 @@
                 <button type="submit">Cadastrar</button>
             </form>
             
-            <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+            <p>Já tem uma conta? <a href="login.php">Faça login</a></p>
         </div>
     </div>
 </body>
